@@ -1,0 +1,26 @@
+body,html{
+    background: #F1F1F1!important;
+}
+.icon-box{
+    font-size: 18px;
+    margin: 0 auto;
+    padding-top: 2.03rem;
+}
+.icon-box img{
+    padding:1rem;
+    width: 7.4375rem;
+    height: 7.4375rem;
+    display: block;
+    background: #fff;
+    margin: 0 auto;
+}
+.icon-text{
+    display: block;
+    text-align: left;
+    margin-top: 0.47rem;
+    margin-left: .3rem;
+    line-height: 1.5;
+}
+.img-title{
+    margin-top: .2rem;
+}

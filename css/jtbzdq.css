@@ -1,0 +1,74 @@
+body,html{
+    background: #F1F1F1!important;
+}
+/*main¿ªÊ¼*/
+.main-box .main-title{
+    background: #fff;
+    overflow: hidden;
+    height: 1.33rem;
+}
+.main-box .main-title .title-list{
+    float: left;
+    width: 14.285%;
+}
+.main-box .main-title .title-list a{
+    display: block;
+    font-size: 16px;
+    color: #434343;
+    line-height: 1.33rem;
+    text-align: center;
+}
+.main-box .main-title .title-list a:hover{
+    text-decoration: none;
+}
+.main-box .main-title .cur a{
+    font-size: 18px;
+    color: #1EA68C;
+    font-weight: bold;
+}
+.icon-box{
+    display: none;
+    /*width: 90%;*/
+    overflow: hidden;
+    padding: 0 .2rem;
+}
+.icon-box .icon-list{
+    /*width: 33.33333%;*/
+    float: left;
+    margin-right: 1%;
+    margin-top: .3rem;
+}
+.icon-box .icon-list{
+    cursor: pointer;
+    width: 32%;
+    overflow: hidden;
+}
+.icon-box .icon-list a .icon-img{
+    background: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+.icon-box .icon-list a .icon-img img{
+    /*width: 90%;*/
+    width: 2rem;
+    height:2rem;
+    display: block;
+    margin: 0 auto;
+    padding: 0.2rem;
+    object-fit: contain;
+}
+.icon-box .icon-list a .icon-text{
+    font-size: 12px;
+    color: #434343;
+    text-align: center;
+    margin-top: .3rem;
+    width: 100%;
+    height: 14px;
+    overflow: hidden;
+}
+.icon-box .icon-list a:hover{
+    text-decoration: none;
+}
+.icon-out-box{
+    display: none;
+}

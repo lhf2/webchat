@@ -1,0 +1,110 @@
+/*top开始*/
+body{
+    box-sizing: border-box;
+    background: #fff!important;
+}
+.top-box{
+    background: linear-gradient(#20AA8E 0%,#28B793 50%,#34CC9C 100%);
+}
+.top-box span{
+    font-size: 18px;
+}
+.top-box .top-detail{
+    color: #fff;
+    text-align: center;
+}
+.top-box .top-detail img{
+    display: block;
+    width: .3125rem;
+    height: .5625rem;
+    float: left;
+    padding-left: .4375rem;
+    vertical-align: bottom;
+}
+.top-box .top-detail span{
+    line-height:.5625rem ;
+}
+/*main开始*/
+.main-detail{
+    overflow: hidden;
+}
+.main-detail .subject-box{
+    font-size: 16px;
+}
+.main-detail .subject-box .subject-list{
+    width: 45%;
+    float: left;
+    padding: .3rem 2%;
+    /*padding: .3rem .5rem;*/
+    border-bottom: 1px solid #E8E8E8;
+}
+.main-detail .subject-box .subject-list:nth-child(odd){
+    border-right:1px solid #E8E8E8;
+}
+.main-detail .subject-box .subject-list a{
+    font-size: 14px;
+    line-height: .65rem;
+    display: block;
+    overflow: hidden;
+    /*clear: both;*/
+}
+.main-detail .subject-box .subject-list a:hover{
+    text-decoration: none;
+}
+.main-detail .subject-box .subject-list .subject-left{
+    display: inline-block;
+    width: .65rem;
+    height: .65rem;
+    background: #35CE9D;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: .65rem;
+    font-size: 14px;
+}
+.main-detail .subject-box .subject-list .subject-center{
+    color: #1B1B1B;
+    margin-left: .3rem;
+}
+.main-detail .subject-box .subject-list .subject-right{
+    float: right;
+    color:#BFBFBF;
+}
+/*标志开始*/
+.main-details .main-list{
+    overflow: hidden;
+    padding: 0.3rem 0.2rem;
+    border-bottom: 1px solid #D9D9D9;
+}
+.main-details .main-list a{
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+    color: #434343;
+}
+.main-details .main-list a .main-left{
+    float: left;
+}
+.main-details .main-list a .main-left img{
+    width: .86rem;
+    height: .86rem;
+    vertical-align: bottom;
+    margin-left: .15rem;
+}
+.main-details .main-list a .main-left span{
+    margin-left: .3rem;
+    line-height: .86rem;
+}
+.main-details .main-list a .main-right{
+    float: right;
+}
+.main-details .main-list a .main-right span{
+    color: #BFBFBF;
+    margin-right: .3rem;
+    line-height: .86rem;
+}
+.main-details .main-list a .main-right img{
+    width: .3125rem;
+    height: .47rem;
+    vertical-align:middle;
+}

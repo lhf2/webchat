@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/resetStyle.css" />
+    <link rel="stylesheet" href="../css/me-child.css" />
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <script type="text/javascript" src="../js/rem.js" ></script>		
+	<script type="text/javascript" src="../js/zepto.js" ></script>
+	<title>我的订单</title>
+	<style type="text/css">
+		.shopList{display:flex; background-color: #fff; }
+		.leftContnt{width: 100%;display:flex; padding:.2rem 0; }
+		.leftContnt .left{width: 1.6rem;margin-left: 1em;}
+		.leftContnt .right{margin-left: .2rem; display: flex; flex-direction: column; justify-content: space-around;}
+		.leftContnt .right .p1{ font-size:.28rem; color: #333;  }
+		.leftContnt .right .p2{ font-size:.24rem; color: #434343;  }
+		.rightBtn{min-width: 1.5rem; text-align: center; color: #fff; background-color: #F46E2A; line-height: 1.5rem;}
+	</style>
+</head>
+<body>
+	<div class="body">
+		<div class="topTitle">
+			<div class="titleMsg">我的订单</div>
+			<div class="back" onclick="window.history.back()"></div>
+			<div class="topTitleHeight"></div>
+		</div>
+		<div class="topClick">
+			<p class="paddmarg">
+				<span class="span1">券</span>
+				<span class="span2">点击使用优惠券</span>
+			</p>
+		</div>
+		<div class="shopList">
+			<div class="leftContnt">
+				<div class="left">
+					<img src="../images/aaa.png" width="100%" height="100%">
+				</div>
+				<div class="right">
+					<p class="p1">海淀驾校--C1/周末班</p>
+					<p class="p2">微信首付款：￥600（已付）</p>
+					<p class="p2">剩余款项：￥3400</p>
+				</div>
+			</div>
+			<div class="rightBtn">
+				结算
+			</div>
+		</div>
+	</div>
+</body>
+</html>

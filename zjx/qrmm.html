@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在线报名</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/lhf-base.css"/>
+    <link rel="stylesheet" href="../css/qrmm.css"/>
+</head>
+<body>
+<!--top开始-->
+<div class="top-box">
+    <div class="top-detail">
+        <a href="javascript:;">
+            <img class='top-return' src="../images/rtn.png" alt="">
+        </a>
+        <span>确认报名</span>
+        <span class="isRight"></span>
+    </div>
+</div>
+<div class="top-detail-height"></div>
+<!--main开始-->
+<div class="main-box">
+    <div class="main-top">
+        <div class="detail-summary-left">
+            <div class="summary-top"></div>
+            <div class="summary-topic">
+                <span class="topic1"></span>
+                <span class="topic2Content"></span>
+            </div>
+        </div>
+        <div class="summary-price"></div>
+    </div>
+    <ul class="main-detail">
+        <div class="xy-info">学员信息</div>
+        <li class="main-detail-list">
+            <span class="detail-title">姓名</span>
+            <span class="detail-item">
+                <input id='name' type="text" required placeholder="输入姓名"/>
+            </span>
+        </li>
+        <li class="main-detail-list">
+            <span class="detail-title">性别</span>
+            <span class="detail-item">
+                <span class="sex cur">女</span>
+                <span class="sex">男</span>
+            </span>
+        </li>
+        <li class="main-detail-list">
+            <span class="detail-title">驾照类型</span>
+            <span class="detail-item">
+                <span class="isTypeSel cur">C1</span>
+                <span class="isTypeSel">C2</span>
+            </span>
+        </li>
+        <li class="main-detail-list">
+            <span class="detail-title">手机号</span>
+            <span class="detail-item">
+                <input id='phone' type="text" required placeholder="输入手机号"/>
+            </span>
+        </li>
+        <li class="main-detail-list">
+            <span class="detail-title yzm-text">验证码</span>
+            <span class="detail-item">
+                <input id='yzm' type="text" autofocus required placeholder="输入验证码"/>
+                <span class="yzm-btn"><a href="javascript:;">发送验证码</a></span>
+                <span class="yzm-btn1"><span>60</span>秒</span>
+                <div style="clear:both;"></div>
+            </span>
+        </li>
+    </ul>
+    <div class="ly-box">
+        <textarea name="" id="ly-con" placeholder="给驾校留言"></textarea>
+    </div>
+    <div class="tj-btn">
+        <a href="javascript:;">
+            提交报名
+        </a>
+    </div>
+</div>
+<div class="mask-box"></div>
+<div class="alertxz-hide">
+    <div class="alertxz-text"></div>
+    <div class="alertxz-btn">
+        <a href="javascript:;">确定</a>
+    </div>
+</div>
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+<script src="../js/jquery-1.11.2.js"></script>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script src="../js/pdtp.js"></script>
+<script src="../js/zjx.js"></script>
+<script src="../js/eachclass.js"></script>
+</body>
+</html>

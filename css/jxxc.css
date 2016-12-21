@@ -1,0 +1,72 @@
+/*main开始*/
+.video-lists {
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+.video-lists img{
+    width: 90%;
+    border:1px solid #ccc;
+}
+.video-lists li{
+    text-align: center;
+}
+/*bottom*/
+.bottom-lists{
+    left: 0;
+    right: 0;
+    position: fixed;
+    bottom: 0;
+    padding: .46rem 0;
+    font-size: 14px;
+    border-top: 1px solid #C6C6C6;
+    background:  linear-gradient(#FEFEFE 0%,#F9F9F9 50%,#F5F5F5 100%);
+    overflow: auto;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.bottom-lists .bottom-list{
+    text-align: center;
+    display: inline-block;
+    margin-left: 20px;
+}
+.bottom-lists .bottom-list.cur{
+    color: #23AE8F;
+}
+.bottom-lists .bottom-list:last-child{
+    margin-right: 20px;
+}
+.bottom-lists .bottom-list.cur a{
+    color: #1EA68C;
+}
+.bottom-lists .bottom-list a{
+    color: #434343;
+}
+.bottom-lists .bottom-list a:hover{
+    text-decoration: none;
+}
+/*显示大图*/
+.bigimg-box{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    left: 0;
+    z-index: 2000000000;
+    display: none;
+    overflow: hidden;
+}
+.bigimg-box img{
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto;
+}
+.video-title{
+    font-weight: bold;
+    font-size: .6rem;
+    color: #33B5E5;
+    text-indent: 1em;
+    line-height:1rem;
+}

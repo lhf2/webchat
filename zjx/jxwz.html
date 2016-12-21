@@ -1,0 +1,48 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>驾校位置</title>
+	<link rel="stylesheet" href="../css/lhf-base.css"/>
+	<style type="text/css">
+		body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+	</style>
+</head>
+<body>
+	<!--top开始-->
+	<div class="top-box">
+		<div class="top-detail">
+			<a href="javascript:;" onclick="javascript:history.back()">
+				<img class="top-return" src="../images/rtn.png" alt="">
+			</a>
+			<span>驾校位置</span>
+			<div class="isRight"></div>
+		</div>
+	</div>
+	<!--地图-->
+	<div id="allmap"></div>
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+	<script src="../js/jquery-1.7.2.min.js"></script>
+	<script src="../js/pdtp.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=zGpaGNFrPIB2MvScZPO29xtD"></script>
+	<script type="text/javascript">
+	// 百度地图API功能
+	var latitude=getQueryString('latitude');
+	var longitude=getQueryString('longitude');
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(longitude,latitude);
+	var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);              // 将标注添加到地图中
+	map.centerAndZoom(point, 15);
+	var circle = new BMap.Circle(point,400,{fillColor:"#81C9E3", strokeWeight: 1 ,fillOpacity: 0.3, strokeOpacity: 0.3});
+    map.addOverlay(circle);
+</script>
+</body>
+</html>
+<!--
+
+-->

@@ -1,0 +1,176 @@
+body{background: #F1F1F1!important;}
+/*top��ʼ*/
+.top-box{
+    background: linear-gradient(#20AA8E 0%,#28B793 50%,#34CC9C 100%);
+}
+.top-box span{
+    font-size: 18px;
+}
+.top-box .top-detail{
+    color: #fff;
+    text-align: center;
+}
+.top-box .top-detail img{
+    display: block;
+    width: .3125rem;
+    height: .5625rem;
+    float: left;
+    padding-left: .4375rem;
+    vertical-align: bottom;
+}
+.top-box .top-detail span{
+    line-height:.5625rem ;
+}
+/*main ��ʼ*/
+.main-box .main-top{
+    background: #fff;
+    padding: .78rem .8rem;
+    padding-bottom: 1.68rem;
+    overflow: hidden;
+}
+.main-box .main-top .main-view{
+    background: url("../images/view.png") no-repeat;
+    width: 2.34rem;
+    height: 2.84rem;
+    background-size:100%;
+}
+.main-box .main-top .main-view{
+    float: left;
+}
+.main-box .main-top .main-view .school-view{
+    text-align: center;
+}
+.main-box .main-top .main-view .school-view .view-item{
+    font-size: 18px;
+    color: #434343;
+    padding-top: .23rem;
+}
+.main-box .main-top .main-view .school-view .score{
+    color: #ECA111;
+    margin-top: .19rem;
+    font-size: 26px;
+}
+.main-box .main-top .main-view .school-view .view-num{
+    margin-top: .19rem;
+}
+.main-box .main-review{
+    float: left;
+}
+.main-box .main-review .review-list:nth-child(1){
+    margin-top: .2rem;
+}
+.main-box .main-review .review-list{
+    margin-left: .78rem;
+    overflow: hidden;
+    margin-top: .3125rem;
+}
+.main-box .main-review .review-list .review-name {
+    font-size: 14px;
+    float: left;
+    /*line-height: .4rem;*/
+}
+.main-box .main-review .review-list .review-img {
+    float: left;
+    margin-left: .4rem;
+    margin-top: .05rem;
+}
+.review-img img {
+    width: .4rem;
+    height: .4rem;
+    vertical-align: top;
+    font-size: 0;
+    float: left;
+    margin-left: .1rem;
+}
+.main-box .detail-lists {
+    background: #F1F1F1;
+    padding: 0 .23rem;
+    margin-bottom:2rem;
+}
+.main-box .detail-lists .detail-list {
+    width: 100%;
+    margin-top: .7rem;
+    border-bottom: 1px solid #DCDCDC;
+    overflow: hidden;
+}
+.detail-lists .detail-list .detail-img {
+    width: 1.28rem;
+    height: 1.28rem;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+.detail-lists .detail-list .detail-img img {
+    vertical-align: top;
+    width: 100%;
+    object-fit: cover;
+}
+.detail-lists .detail-list .detail-text {
+    margin-left: .3rem;
+    width: 81%;
+    float: left;
+}
+.detail-lists .detail-list .detail-text .my {
+    margin-top: .1rem;
+}
+.detail-lists .detail-list .detail-text .my .name {
+    color: #1EA68C;
+}
+.detail-lists .detail-list .detail-text .my .time {
+    color: #7B7B7B;
+    float: right;
+    font-size: 14px;
+}
+.detail-text .review-img{
+    margin-top: .1rem;
+}
+.detail-lists .detail-list .summary {
+    margin-top: .2rem;
+}
+.detail-lists .detail-list .detail-text .name,.detail-lists .detail-list .summary {
+    font-size: 16px;
+}
+.detail-lists .detail-list .zan{
+    margin: .2rem 0;
+    float: right;
+}
+.detail-lists .detail-list .zan img{
+    width: .47rem;
+    height: .47rem;
+    vertical-align: bottom;
+}
+.detail-lists .detail-list .zan span{
+    font-size: 16px;
+    color: #737373;
+    margin-left: .1rem;
+}
+.view-btn a{
+    display: block;
+    width: 100%;
+    background:linear-gradient(#27BF82 0%,#1CB56E 50%,#10AA59 100%);
+    padding: .5rem 0;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+}
+.view-btn a:hover{
+    text-decoration: none;
+}
+.comment-img{
+    display: none;
+    width: 7rem;
+    overflow: hidden;
+    padding-bottom: .1rem;
+}
+.comment-img img{
+    cursor: pointer;
+    object-fit: cover;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin-top: .1rem;
+    float: left;
+    margin-left: .1rem;
+}

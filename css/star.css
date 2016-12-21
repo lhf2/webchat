@@ -1,0 +1,61 @@
+.review-name{
+    margin-right: .47rem;
+    line-height: 20px!important;
+}
+.main-box .main-review .review-list .review-star{
+    line-height: 20px!important;
+}
+/* 星星点灯照亮我的家门 */
+.star_bg {
+    float: left;
+    width:135px; height: 21px;
+    background: url(../star1.png) repeat-x;
+    position: relative;
+    overflow: hidden;
+}
+.star {
+    height: 100%; width: 27px;
+    line-height: 6em;
+    position: absolute;
+    z-index: 3;
+}
+.star:hover {
+    background: url(../star1.png) repeat-x 0 -25px!important;
+    left: 0; z-index: 2;
+}
+.star_1 { left: 0; }
+.star_2 { left: 27px; }
+.star_3 { left: 54px; }
+.star_4 { left: 81px; }
+.star_5 { left: 108px; }
+.star_1:hover { width: 27px; }
+.star_2:hover { width: 54px; }
+.star_3:hover { width: 81px; }
+.star_4:hover { width: 108px; }
+.star_5:hover { width: 135px; }
+
+.star label {
+    display: block; _display:inline;
+    height: 100%; width: 100%;
+    cursor: pointer;
+}
+
+/* 幕后的英雄，单选按钮 */
+.score { position: absolute; clip: rect(0 0 0 0); }
+.score:checked + .star {
+    background: url(../star1.png) repeat-x 0 -25px;
+    left: 0; z-index: 1;
+}
+.score_1:checked ~ .star_1 { width: 27px;}
+.score_2:checked ~ .star_2 { width: 54px;}
+.score_3:checked ~ .star_3 { width: 81px;}
+.score_4:checked ~ .star_4 { width: 108px;}
+.score_5:checked ~ .star_5 { width: 135px;}
+
+.star_bg:hover .star {background-image: none; }
+
+/* for IE6-IE8 JS 交互 */
+.star_checked {
+    background: url(../star1.png) repeat-x 0 -25px;
+    left: 0; z-index: 1;
+}

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>查询页面</title>
+    <link rel="stylesheet" href="../css/lhf-base.css"/>
+    <link rel="stylesheet" href="../css/cxym.css"/>
+    <style type="text/css">
+        .top-detail{height: 1.7rem !important;}
+    </style>
+    <script type="text/javascript" src="../js/loading.js"></script>
+</head>
+<body>
+<!--top-->
+<div class="top-box-shak">
+   
+</div>
+<div class="top-box">
+    <div class="top-detail">
+        <a href="javascript:;">
+            <img class="top-return" src="../images/rtn.png" alt="">
+        </a>
+        <input class="search-all" type="text" placeholder="驾校名/行政区/特色"/>
+        <span class="key-confirm">
+            <a href="javascript:;">确定</a>
+        </span>
+    </div>
+</div>
+<!--main-->
+<div class="main-box">
+    <ul class="main-lists">
+        <li class="main-list condition-list">
+            <a href="javascript:;">
+                <span>班车</span>
+            </a>
+        </li>
+        <li class="main-list condition-list">
+            <a href="javascript:;">
+                <span>自带考场</span>
+            </a>
+        </li>
+        <li class="main-list condition-list">
+            <a href="javascript:;">
+                <span>认证代理</span>
+            </a>
+        </li>
+        <li class="main-list condition-list">
+            <a href="javascript:;">
+                <span>活动优惠</span>
+            </a>
+        </li>
+    </ul>
+    <!--list-->
+    <div class="main-detail-hide">未找到合适的驾校</div>
+    <div id='isRefresh' class="isRefresh"><span id='DNF'>↓</span><span id="LOL">下拉刷新</span></div>
+    <div class="main-detail-box">
+        
+        <ul class="main-detail" ispage="1">
+            
+        </ul>
+    </div>
+    <div id='isDownfresh' class="isRefresh"><span id='WOW'>↓</span><span id="upText">上拉加载</span></div>
+</div>
+<!--底部开始-->
+<div style="height: 2rem"></div>
+<ul class="bottom-box bottom-box1">
+    <li class="bottom-lists">
+        <a href="javascript:;">
+            <img src="../images/bn1.png" id='bn1' alt=""/>
+            <span>距离</span>
+        </a>
+    </li>
+    <li class="bottom-lists">
+        <a href="javascript:;">
+            <img src="../images/bn2.png" id='bn2' alt=""/>
+            <span>价格/口碑</span>
+        </a>
+    </li>
+    <li class="bottom-lists">
+        <a href="javascript:;">
+            <img src="../images/bn3.png" id='bn3' alt=""/>
+            <span>车型/人数</span>
+        </a>
+    </li>
+    <li class="bottom-lists">
+        <a href="javascript:;">
+            <img src="../images/bn4.png" id='bn4' alt=""/>
+            <span>排序</span>
+        </a>
+    </li>
+</ul>
+<!--距离-->
+<div class="jl-hide hide-box">
+    <div class="jl-top">
+        <ul class="jl-left">
+            <li class="jl-all">距离</li>
+            <li class="jl-all">行政区</li>
+        </ul>
+        <ul class="jl-right">
+            <li class="jl-list">不限</li>
+            <li class="jl-list">500米</li>
+            <li class="jl-list">1公里</li>
+            <li class="jl-list">2公里</li>
+            <li class="jl-list">4公里</li>
+            <li class="jl-list">8公里</li>
+            <li class="jl-list">10公里</li>
+            <li class="jl-list">15公里</li>
+        </ul>
+        <ul class="jl-right area-right"></ul>
+    </div>
+    <div class="jl-bottom confirm-btn confirm-cx">确定</div>
+</div>
+<!--价格/口碑-->
+<div class="price-hide hide-box">
+    <div class="price-list">
+        <div class="price-top">价格</div>
+        <ul class="alert-main">
+            <li class="price-main cur">不限</li>
+            <li class="price-main">2k-3k</li>
+            <li class="price-main">3k-4k</li>
+            <li class="price-main">4k-5k</li>
+            <li class="price-main">5k以上</li>
+        </ul>
+    </div>
+    <div class="kb-list">
+        <div class="kb-top">口碑</div>
+        <ul class="alert-main">
+            <li class="wom-main cur">不限</li>
+            <li class="wom-main">一般</li>
+            <li class="wom-main">较好</li>
+            <li class="wom-main">良好</li>
+            <li class="wom-main">极好</li>
+        </ul>
+    </div>
+    <div class="confirm-btn confirm-cx">确定</div>
+</div>
+<!--车型/人数-->
+<div class="price-hide hide-box">
+    <div class="price-list">
+        <div class="price-top">车型</div>
+        <ul class="alert-main">
+            <li class="license-list cur">不限</li>
+            <li class="license-list">C1手动</li>
+            <li class="license-list">C2自动</li>
+            <li class="license-list">A1</li>
+            <li class="license-list">A2</li>
+            <li class="license-list">B1</li>
+            <li class="license-list">B2</li>
+        </ul>
+    </div>
+    <div class="kb-list">
+        <div class="kb-top">人数</div>
+        <ul class="alert-main">
+            <li class="people-num cur">不限</li>
+            <li class="people-num">一人一车</li>
+            <li class="people-num">二人一车</li>
+            <li class="people-num">多人一车</li>
+        </ul>
+    </div>
+    <div class="confirm-btn confirm-cx">确定</div>
+</div>
+<!--排序-->
+<ul class="order-box hide-box">
+    <li class="order-list">热点排序</li>
+    <li class="order-list">评分 高→低</li>
+    <li class="order-list">价格 低→高</li>
+    <li class="order-list">价格 高→低</li>
+    <li class="order-list">距离 近→远</li>
+    <li class="order-list">通过率 高→低</li>
+</ul>
+<div class="mask-box"></div>
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/lazyload.js"></script>
+<script src="../js/jquery.raty.js"></script>
+<script type="text/javascript" src="../js/iscroll-probe.js"></script>
+<script src="../js/pdtp.js"></script>
+<script src="../js/zjx.js"></script>
+<script src="../js/zjxajax.js"></script>
+</body>
+</html>
+
+
+<!-- <li class="main-detail-list">
+    <a href="javascript:;">
+        <div class="detail-list detail-left">
+            <img data-original="" alt="" />
+        </div>
+        <div class="detail-list detail-center">
+            <div class="detail-c-1">
+                <span class="dirver-name"></span>
+                <span class="first-price">通过率<i></i></span>
+            </div>
+            <div class="review-img"></div>
+            <div class="detail-c-bot">
+                <span class="sorce-text"></span>
+                <span class="comment-num"><i></i>个评价</span>
+            </div>
+            <div class="detail-c-3"></div>
+            <img class="Agent" src="../images/yirenzheng.png" />
+            <div class="detail-c-4">
+                距离您<i></i>公里<span class="havebus">班车</span>
+            </div>
+        </div>
+        <div class="detail-list detail-right"></div>
+    </a>
+</li> -->

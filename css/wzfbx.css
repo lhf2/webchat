@@ -1,0 +1,121 @@
+.main-box .main-top{
+    display: -webkit-flex;
+    display: flex;
+}
+.main-box .main-top .title-list{
+    flex:1;
+    font-size: 14px;
+    padding: .42rem 0;
+    text-align: center;
+    background: #F7F7F7;
+    color: #707070;
+    border-bottom: 1px solid #D3D3D3;
+}
+.main-box .main-top .title-list.cur{
+    background: #fff;
+    color: #1EA68C;
+}
+.main-box .main-top .title-list:nth-child(1){
+    border-right: 1px solid #D3D3D3;
+}
+.car-box{
+    overflow: hidden;
+}
+.car-title{
+    font-size: 16px;
+    padding: .3rem .65rem;
+    border-bottom: 1px solid #D3D3D3;
+}
+.car-box .car-list{
+    width: 24.6%;
+    float: left;
+    border-bottom: 1px solid #D3D3D3;
+    border-right: 1px solid #D3D3D3;
+    font-size: 14px;
+    padding: .3rem 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.car-box .car-list.cur{
+    background: #F1F1F1;
+    color: #1EA68C;
+}
+table,table thead{
+    width: 100%;
+}
+table thead tr{
+    width: 100%;
+    border-bottom: 1px solid #D3D3D3;
+    color: #9F9F9F;
+}
+table thead tr th{
+    padding: .375rem 0;
+    text-align: center;
+    font-size: 12px;
+    vertical-align: middle;
+}
+table thead tr th:nth-child(2){
+    width: 30%;
+}
+table tbody tr{
+    border-bottom: 1px solid #D3D3D3;
+}
+table tbody tr td{
+    vertical-align: middle;
+    font-size: 12px;
+    padding: .375rem 0;
+    text-align: center;
+}
+table tbody tr td.stations,table tbody tr td.time1,table tbody tr td.time2,table tbody tr td.time3{
+    width: 15%;
+}
+table tbody tr td.stations{
+    width: 20%;
+}
+.transit-box .transit-list{
+    padding: .3rem;
+    font-size: 14px;
+    border-bottom: 1px solid #C6C6C6;
+    overflow: hidden;
+}
+.transit-box .transit-list .transit-left,.transit-box .transit-list .transit-center{
+    float: left;
+}
+.transit-box .transit-list .transit-right{
+    float: right;
+}
+.transit-box .transit-list .transit-left{
+    padding: .3rem 0;
+    width: 1.2rem;
+    border: 1px solid #EDBF74;
+    color: #EDBF74;
+    text-align: center;
+}
+.transit-box .transit-list .transit-center{
+    margin-left: .3rem;
+}
+.transit-center .transit-loc img{
+    width: 1rem;
+}
+.transit-center .transit-detail{
+    color: #909090;
+}
+.transit-center .transit-time,.transit-center .transit-detail{
+    margin-top: .1rem;
+    font-size: 12px;
+}
+.transit-right .transit-Destination{
+    color: #1EA68C;
+    margin-top: .1rem;
+}
+.transit-right .Destination-btn{
+    color: #fff;
+    background: #1EA68C;
+    padding: .2rem;
+    margin-top: .2rem;
+}
+.car-hide{
+    display: none;
+}

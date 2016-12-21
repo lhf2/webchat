@@ -1,0 +1,111 @@
+body{
+    background: #F1F1F1!important;
+}
+/*top*/
+.top-box .top-detail img{
+    margin-top: .22rem!important;
+}
+input{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.search-all{
+    margin: 0 auto;
+    width: 55%;
+    border-radius: 8px;
+    border:none;
+    font-size: 16px;
+    /*color: #fff;*/
+    padding: 0.3125rem .47rem;
+}
+.confirm-btn{
+    float: right;
+    margin-right: .4rem;
+    border: 1px solid #68CCB4;
+    border-radius: 5px;
+    padding: .3125rem;
+    line-height: 16px!important;
+}
+.confirm-btn a{
+    color: #fff;
+    font-size: 16px;
+}
+.confirm-btn a:hover{
+    text-decoration: none;
+}
+/*main*/
+table:nth-child(1){
+    margin-top: .3rem!important;
+}
+table{
+    margin-top: .3rem;
+    background: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+table tbody tr{
+    /*display: flex;*/
+}
+table,table thead,table thead th,table tbody,table tbody tr{
+    width: 100%;
+}
+table tbody tr td{
+    width: 24.65%!important;
+    float: left;
+    padding: .4375rem 0;
+    /*flex: 1;*/
+}
+table tbody tr td{
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+}
+table thead th{
+    padding: .15rem 0;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    border-collapse: collapse;
+    line-height: .5625rem;
+}
+table thead th{
+    overflow: hidden;
+}
+table thead th .list-img{
+    float: left;
+}
+table thead th .list-img span{
+    color: #A0A0A0;
+    font-size: 14px;
+    line-height: .6rem;
+}
+table thead th .list-img img{
+    width: .6rem;
+    height: .6rem;
+    margin-left: .3125rem;
+    vertical-align: top;
+}
+table thead th .hist-close{
+    float: right;
+}
+table thead th .hist-close img{
+    width: .5625rem;
+    height: .5625rem;
+    margin-right: .3125rem;
+}
+.history-list{
+    padding: .4rem 0;
+    border-bottom: 1px solid #C6C6C6;
+    font-size: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+.history-list .history-main,.history-list .history-main1{
+    color: #333;
+    margin-left: .2rem;
+    float: left;
+}
+.history-list .history-detail,.history-list .history-detail1{
+    color: #999;
+    margin-right: .2rem;
+    float: right;
+}

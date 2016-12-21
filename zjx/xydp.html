@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学员点评</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/lhf-base.css"/>
+    <link rel="stylesheet" href="../css/xydp.css"/>
+    <link rel="stylesheet" href="../css/star.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/sweet-alert.css">
+</head>
+<body>
+<!--top开始-->
+<div class="top-box">
+    <div class="top-detail">
+        <a href="javascript:;">
+            <img class="top-return" src="../images/rtn.png" alt=""/>
+        </a>
+        <span>学员点评</span>
+        <a href="javascript:;" class="show-btn">
+            发布
+        </a>
+    </div>
+</div>
+<!--main开始-->
+<div class="main-box">
+    <div class="main-school">
+        <div class="school-img">
+            <img src="" alt=""/>
+        </div>
+        <div class="school-text">
+            <div class="sc-name"></div>
+            <div class="adr">
+                <img src="../images/adr.png" alt=""/>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <ul class="main-review">
+        <li class="review-list">
+            <span class="review-name">服务</span>
+            <div class="star_bg">
+                <input type="radio" id="starScore1" class="score score_1" value="1" name="score">
+                <a href="#starScore1" class="star star_1"><label for="starScore1"></label></a>
+                <input type="radio" id="starScore2" class="score score_2" value="2" name="score">
+                <a href="#starScore2" class="star star_2"><label for="starScore2"></label></a>
+                <input type="radio" id="starScore3" class="score score_3" value="3" name="score">
+                <a href="#starScore3" class="star star_3"><label for="starScore3"></label></a>
+                <input type="radio" id="starScore4" class="score score_4" value="4" name="score">
+                <a href="#starScore4" class="star star_4"><label for="starScore4"></label></a>
+                <input type="radio" id="starScore5" class="score score_5" value="5" name="score">
+                <a href="#5" class="star star_5"><label for="starScore5"></label></a>
+            </div>
+            <span class="review-star">0星</span>
+        </li>
+        <li class="review-list">
+            <span class="review-name">教学</span>
+            <div class="star_bg">
+                <input type="radio" id="starScore6" class="score score_1" value="1" name="score1">
+                <a href="#starScore1" class="star star_1"><label for="starScore6"></label></a>
+                <input type="radio" id="starScore7" class="score score_2" value="2" name="score1">
+                <a href="#starScore2" class="star star_2"><label for="starScore7"></label></a>
+                <input type="radio" id="starScore8" class="score score_3" value="3" name="score1">
+                <a href="#starScore3" class="star star_3"><label for="starScore8"></label></a>
+                <input type="radio" id="starScore9" class="score score_4" value="4" name="score1">
+                <a href="#starScore4" class="star star_4"><label for="starScore9"></label></a>
+                <input type="radio" id="starScore10" class="score score_5" value="5" name="score1">
+                <a href="#5" class="star star_5"><label for="starScore10"></label></a>
+            </div>
+            <span class="review-star">0星</span>
+        </li>
+        <li class="review-list">
+            <span class="review-name">场地</span>
+            <div class="star_bg">
+                <input type="radio" id="starScore11" class="score score_1" value="1" name="score2">
+                <a href="#starScore1" class="star star_1"><label for="starScore11"></label></a>
+                <input type="radio" id="starScore12" class="score score_2" value="2" name="score2">
+                <a href="#starScore2" class="star star_2"><label for="starScore12"></label></a>
+                <input type="radio" id="starScore13" class="score score_3" value="3" name="score2">
+                <a href="#starScore3" class="star star_3"><label for="starScore13"></label></a>
+                <input type="radio" id="starScore14" class="score score_4" value="4" name="score2">
+                <a href="#starScore4" class="star star_4"><label for="starScore14"></label></a>
+                <input type="radio" id="starScore15" class="score score_5" value="5" name="score2">
+                <a href="#5" class="star star_5"><label for="starScore15"></label></a>
+            </div>
+            <span class="review-star">0星</span>
+        </li>
+        <li class="review-list">
+            <span class="review-name">收费</span>
+            <div class="star_bg">
+                <input type="radio" id="starScore16" class="score score_1" value="1" name="score4">
+                <a href="#starScore1" class="star star_1"><label for="starScore16"></label></a>
+                <input type="radio" id="starScore17" class="score score_2" value="2" name="score4">
+                <a href="#starScore2" class="star star_2"><label for="starScore17"></label></a>
+                <input type="radio" id="starScore18" class="score score_3" value="3" name="score4">
+                <a href="#starScore3" class="star star_3"><label for="starScore18"></label></a>
+                <input type="radio" id="starScore19" class="score score_4" value="4" name="score4">
+                <a href="#starScore4" class="star star_4"><label for="starScore19"></label></a>
+                <input type="radio" id="starScore20" class="score score_5" value="5" name="score4">
+                <a href="#5" class="star star_5"><label for="starScore20"></label></a>
+            </div>
+            <span class="review-star">0星</span>
+        </li>
+    </ul>
+    <!-- <div class="review-con">
+        <textarea name="" id="" placeholder="谈谈你的驾校"></textarea>
+        <div class="main-add">
+            <div class="add-img" id="add-img">
+
+            </div>
+            <div class="add-btn">
+                +
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="review-con">
+        <textarea name="" id="" placeholder="谈谈你的驾校"></textarea>
+        <div class="main-add">
+            <div class="add-img" id="add-img">
+
+            </div>
+            <div class="add-btn">
+                +
+            </div>
+        </div>
+    </div>
+
+
+    <div class="check-box">
+        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox">
+        <label for="checkbox-1-1"></label>
+        <span>隐藏您的头像和昵称</span>
+    </div>
+</div>
+<!--弹出-->
+<div class="mask-box"></div>
+<ul class="camera-box">
+    <li class="camera-list">
+        拍照
+        <input type="file" id="playeraddress" name="playeraddress" accept="image/*" capture="camera">
+    </li>
+    <li class="camera-list">
+        相册
+        <input id='filename' name='filename' type="file" accept="image/*" multiple/>
+    </li>
+    <li class="camera-list cur cancel-btn">
+        取消
+    </li>
+</ul>
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+<script src="../js/jquery-1.7.2.min.js"></script>
+
+<script src="../js/pdtp.js"></script>
+<script src="../js/zjx.js"></script>
+<script src="../js/mbUploadImg.js"></script>
+
+<script src="../js/jxcomment.js"></script>
+ <script src="../js/sweet-alert.min.js"></script>
+ <script type="text/javascript" src="../js/uploadPreview.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+body{background: #fff}
+/*top开始*/
+.top-box{
+    width: 100%;
+    position: fixed;
+    top:0;
+    background: linear-gradient(#20AA8E 0%,#28B793 50%,#34CC9C 100%);
+}
+.top-box span{
+    font-size: 18px;
+}
+.top-box .top-detail{
+    color: #fff;
+    text-align: center;
+}
+.top-box .top-detail img{
+    display: block;
+    width: .3125rem;
+    height: .5625rem;
+    float: left;
+    padding-left: .4375rem;
+    vertical-align: bottom;
+}
+.top-box .top-detail span{
+    line-height:.5625rem ;
+}
+.top-box .top-icon{
+    padding: .78rem 0;
+    text-align: center;
+}
+.top-box .top-icon span{
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin-top: .3rem;
+}
+.top-box .top-icon .icon-img img{
+    width: 2.375rem;
+    height: 2.375rem;
+}
+/*main开始*/
+.main-box .main-outtop{
+    position: fixed;
+    width: 100%;
+    top:1.1rem;
+}
+.main-box .main-top{
+    padding: .4375rem 0.3rem;
+    background: linear-gradient(#FEFEFE 0%,#FAFAFA 50%,#F4F4F4 100%);
+    box-shadow: 2px 2px 10px #DBDBDB;
+    font-size: 18px;
+    color: #434343;
+}
+.main-box .main-top .top-img{
+    float: right;
+}
+.main-box .main-top .top-img img{
+    width: .42rem;
+    height: .55rem;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+.main-box .main-top .top-img span{
+    color: #434343;
+}
+.main-box .main-top .top-img a:hover{
+    text-decoration: none;
+}
+.order-box{
+    padding-top: 2.8rem;
+}
+.order-box .order-lists{
+    font-size: 16px;
+    text-align: center;
+}
+.order-box .order-lists .order-list .order-number{
+    padding: .125rem 0;
+    border-bottom:1px solid #DADADA;
+}
+.order-box .order-lists .order-list .num-img img{
+    width: .625rem;
+    height: .54rem;
+    display: inline-block;
+    float: right;
+    vertical-align:middle;
+    clear: both;
+    margin-right: .5rem;
+}
+.order-box .order-lists .order-list .number-lists .number-list{
+    text-align: left;
+    padding: .47rem .6rem;
+    border-bottom:1px solid #CFCFCF;
+}
+.num-box{
+    padding: 1rem 0;
+    position: fixed;
+    right:.4rem;
+    top:2rem;
+    cursor: pointer;
+}
+.num-box .num-list{
+    margin-top: .1rem;
+}
+.num-box .num-list a{
+    font-size: 12px;
+    color: #1EA68C;
+}
+.num-box .num-list a:hover{
+    text-decoration: none;
+}

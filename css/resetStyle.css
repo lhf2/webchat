@@ -1,0 +1,10 @@
+html{font-size: 100px;}
+body{font-size: 16px; font-family: "微软雅黑";}
+*{padding: 0;margin: 0;}
+*:focus {outline: none}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none; display: block;}
+.back{ position: absolute; left: 0; top: 0; color: #fff; height: .8rem; width: .8rem; text-align: center; line-height: .8rem; background:url(../images/rtn.png) no-repeat center center; background-size: .2rem; }
+
+

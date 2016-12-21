@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>功能按键</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/lhf-base.css"/>
+    <link rel="stylesheet" href="../css/jtbzdq.css"/>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <script src="../js/jquery-1.11.2.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+<!--top开始-->
+<div class="top-box">
+    <div class="top-detail top-ling">
+        <a href="javascript:;">
+            <img class='top-return'  src="../images/rtn.png" alt="">
+        </a>
+        <span>功能按键</span>
+        <span class="isRight"></span>
+    </div>
+</div>
+<div class="top-detail-height"></div>
+<!--main开始-->
+<div class="main-box">
+    <ul class="icon-box" style="display: block">
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/carFouction/1.jpg" alt="该按键是用来在车内遥控开启油箱盖。装有该按键的车辆，驾驶员可以通过这个按键将油箱盖子从车内打开。不过油箱的关闭好需要手动在车外控制"/>
+                </div>
+                <div class="icon-text">油箱开启键</div>
+            </a>
+        </li>
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/carFouction/2.jpg" alt="该按键是用来打开关闭车辆的ESP。车辆的ESP系统默认为工作状态，为了享受更直接的驾驶感受，车主可以按下该按键关闭ESP系统"/>
+                </div>
+                <div class="icon-text">ESP开关键</div>
+            </a>
+        </li>
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/carFouction/3.jpg" alt="该按键是用来根据车主需要打开或是关闭车上的倒车雷达系统。驾驶员可以按下该按钮手动控制倒车雷达的工作。在倒车时手动关闭倒车雷达，或是手动开启倒车雷达"/>
+                </div>
+                <div class="icon-text">倒车雷达键</div>
+            </a>
+        </li>
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/carFouction/4.jpg" alt="该按键是车辆中控门锁的控制按钮。车主可以通过按下该按钮，同时打开或是关闭各车门的门锁。也可以单独关闭某一个开启的车门。有效的保证了车内人员的安全"/>
+                </div>
+                <div class="icon-text">中控锁键</div>
+            </a>
+        </li>
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/carFouction/5.jpg" alt="该按键是用来控制前大灯的自动清洗功能。在装有前大灯清洗的车辆上，车主可以通过按下这一按键开启钱大灯清洗装置，对车辆的前大灯进行喷水清洗"/>
+                </div>
+                <div class="icon-text">前大灯清洗键</div>
+            </a>
+        </li>
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/carFouction/6.jpg" alt="该按键是用来控制车内电动后遮阳帘的打开与关闭。在装有电动后遮阳帘的车内，车主可以通过按下这一按键打开或是开启后窗的电动遮阳帘。用来遮挡阳光"/>
+                </div>
+                <div class="icon-text">后遮阳帘键</div>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+<script>
+    $(function(){
+        $('.icon-list').click(function () {
+            var index=$('.icon-list').index(this);
+            if(index%2==0){
+                $('.icon-box .icon-list').css('margin-right',0);
+            }
+            var text=$($(".icon-text")[index]).html();
+            var img=$(this).children('a').children('.icon-img').children(img).attr('src');
+            var imgdetail=$(this).children('a').children('.icon-img').children('img').attr('alt');
+            $('.icon-list a').attr('href','icon.html?id='+index+'&text='+text+'&img='+img+'&imgdetail='+imgdetail);
+        })
+    })
+</script>
+</html>

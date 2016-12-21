@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交警手势</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/lhf-base.css"/>
+    <link rel="stylesheet" href="../css/jtbzdq.css"/>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <script src="../js/jquery-1.11.2.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+<!--top开始-->
+<div class="top-box">
+    <div class="top-detail top-ling">
+        <a href="javascript:;">
+            <img class='top-return'  src="../images/rtn.png" alt="">
+        </a>
+        <span>交警手势</span>
+        <span class="isRight"></span>
+    </div>
+</div>
+<div class="top-detail-height"></div>
+<!--main开始-->
+<div class="main-box">
+    <ul class="icon-box" style="display: block">
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/policeGesture/1.jpg" alt="右臂向前平伸，掌心向左；右臂向左水平摆动，车辆应当腾空指定的车道，减速慢行"/>
+                </div>
+                <div class="icon-text">变道信号</div>
+            </a>
+        </li>
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/policeGesture/2.jpg" alt="右臂向前平伸，掌心向下；右臂与手臂平直向下方摆动，车辆应当减速慢行"/>
+                </div>
+                <div class="icon-text">减速慢行信号</div>
+            </a>
+        </li>
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/policeGesture/3.jpg" alt="左臂向前平伸，掌心向前；右臂与手掌平直向前方摆动，手掌向左，准备右方的车辆右转弯"/>
+                </div>
+                <div class="icon-text">右转弯信号</div>
+            </a>
+        </li>
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/policeGesture/4.jpg" alt="左臂向前上方直伸，掌心向前，不准前方车辆通行"/>
+                </div>
+                <div class="icon-text">停止信号</div>
+            </a>
+        </li>
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/policeGesture/5.jpg" alt="左臂向左平伸，掌心向前；右臂向右平伸，掌心向前，向左摆动，准许右方直行的车辆通行"/>
+                </div>
+                <div class="icon-text">直行信号</div>
+            </a>
+        </li>
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/policeGesture/6.jpg" alt="左臂向左下方平伸，掌心向下；左臂与手掌平直向下方摆动，准许左方左转弯的车辆进入路口，沿左转弯行驶方向靠近路口中心，等候左转弯信号"/>
+                </div>
+                <div class="icon-text">左转弯待转信号</div>
+            </a>
+        </li>
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/policeGesture/7.jpg" alt="右臂向前平伸，掌心向前；左臂与手掌平直向前方摆动，掌心向右，准许车辆左转弯，在不妨碍被放行车辆通行的情况下可以掉头"/>
+                </div>
+                <div class="icon-text">左转弯信号</div>
+            </a>
+        </li>
+        <li class="icon-list">
+            <a>
+                <div class="icon-img">
+                    <img src="../images/biaozhi/policeGesture/8.jpg" alt="左臂向前上方平伸，掌心向前；右臂向前下方平伸，掌心向左；右臂向左水平摆动，车辆应当靠边停车"/>
+                </div>
+                <div class="icon-text">车辆靠边停车信号</div>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+<script>
+    $(function(){
+        $('.icon-list').click(function () {
+            var index=$('.icon-list').index(this);
+            if(index%2==0){
+                $('.icon-box .icon-list').css('margin-right',0);
+            }
+            var text=$($(".icon-text")[index]).html();
+            var img=$(this).children('a').children('.icon-img').children(img).attr('src');
+            var imgdetail=$(this).children('a').children('.icon-img').children('img').attr('alt');
+            $('.icon-list a').attr('href','icon.html?id='+index+'&text='+text+'&img='+img+'&imgdetail='+imgdetail);
+        })
+    })
+</script>
+</html>

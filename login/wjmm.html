@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>忘记密码</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/lhf-base.css"/>
+    <link rel="stylesheet" href="../css/wjmm.css"/>
+</head>
+<body>
+<!--top开始-->
+<div class="top-box">
+    <div class="top-detail">
+        <a href="javascript:history.back()">
+            <img class='top-return'  src="../images/rtn.png" alt="">
+        </a>
+        <span>忘记密码</span>
+    </div>
+</div>
+<!--main开始-->
+<div class="main-box">
+    <div class="login-show">
+        <div class="phone-box">
+            <span>手机号</span>
+            <input type="tel" required/>
+        </div>
+        <div class="phone-box yzm-box">
+            <span>验证码</span>
+            <input type="text" required style="width: 25%"/>
+            <div class="yzm-btn">发送验证码</div>
+            <div class="yzm-btn1"><span>60</span>秒</div>
+        </div>
+        <div class="phone-box mm-box mm-box1">
+            <span>重置密码</span>
+            <input type="password" required/>
+        </div>
+        <div class="phone-box mm-box mm-box2">
+            <span>确认密码</span>
+            <input type="password" required/>
+        </div>
+    </div>
+    <div class="login-btn complete-btn">
+        <a href="javascript:;">完成</a>
+    </div>
+</div>
+<!--alert-->
+<div class="yz-hide">请输入手机号</div>
+<div class="mask-box"></div>
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../js/loginajax.js"></script>
+</body>
+</html>
